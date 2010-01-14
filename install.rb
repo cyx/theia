@@ -1,1 +1,1 @@
-puts File.read(README)
+puts File.read('README')

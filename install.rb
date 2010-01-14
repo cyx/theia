@@ -1,1 +1,1 @@
-puts File.read('README')
+puts File.read(File.join(File.dirname(__FILE__), 'README.markdown'))

@@ -12,7 +12,7 @@ module Theia
       if errors.any?
         error = 
           if options[:full]
-            Patient.human_attribute_name(field_name) + ' ' + errors.to_sentence
+            object.class.human_attribute_name(field_name) + ' ' + errors.to_sentence
           else
             errors.to_sentence
           end
